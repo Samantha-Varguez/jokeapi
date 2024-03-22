@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<p> <b> 
+		Consumo de REST-API de chistes
+	   </b> </p>
+<div> 
+	<label> URL </label>
+	<input type="text" id="url">
+</div>
+<div>
+	<label> Setup </label>
+	<input type="text" id= "setup">
+</div>
+<div>
+        <label> Punchline </label>
+        <input type="text" id= "punchline">
+</div>
+<div>
+        <label> Type </label>
+        <input type="text" id= "type">
+</div>
+
+<button onclick="postJoke()"> POST joke </button>
+<button onclick="getJokes()"> GET jokes </button>
+<div id="resultado"> </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="calljokeapi.js"></script>
+<link rel="stylesheet" href="styles.css">
+
+	</body>
+	</html>
+
+</html>
