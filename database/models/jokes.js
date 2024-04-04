@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
     url: DataTypes.STRING,
     setup: DataTypes.TEXT,
     punchline: DataTypes.TEXT,
-    type: DataTypes.TEXT
+    category: DataTypes.TEXT
   }, {
     sequelize,
     modelName: 'Jokes',
