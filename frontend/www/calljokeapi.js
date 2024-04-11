@@ -1,5 +1,4 @@
 var url = "http://34.168.33.188:8080/api/jokes";
-
 function postJoke() {
 	console.log(url);
 

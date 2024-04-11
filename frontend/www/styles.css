@@ -1,0 +1,27 @@
+body {
+    background-color: powderblue;
+    font-family:Helvetica, sans-serif;
+  }
+
+  div {
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+  }
+
+  td, th {
+    border: 2px solid #ddd;
+    padding: 8px;
+  }
+
+tr:hover {background-color: #ddd;}
+
+table {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #75b0d4;
+    border-collapse: crgb(141, 156, 231);
+  width: 100%;
+  }

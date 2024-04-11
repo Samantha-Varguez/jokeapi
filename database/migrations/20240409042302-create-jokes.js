@@ -1,7 +1,8 @@
 'use strict';
+/** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('Jokes', {
+  async up(queryInterface, Sequelize) {
+    await queryInterface.createTable('jokes', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -9,7 +10,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       url: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       setup: {
         type: Sequelize.TEXT
@@ -17,7 +18,7 @@ module.exports = {
       punchline: {
         type: Sequelize.TEXT
       },
-      category: {
+      type: {
         type: Sequelize.TEXT
       },
       createdAt: {
@@ -30,7 +31,7 @@ module.exports = {
       }
     });
   },
-  down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('Jokes');
+  async down(queryInterface, Sequelize) {
+    await queryInterface.dropTable('jokes');
   }
 };
